@@ -1,0 +1,16 @@
+node
+{
+    stage("checkout")
+    {
+        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/purushotham007/test_jenkins']]])
+    }
+    stage("build")
+    {
+        sh label:'',script: 'mvn install'
+        
+    }
+    stage("testing")
+    {
+        echo "testing"
+    }
+}
