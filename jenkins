@@ -13,4 +13,8 @@ node
     {
         echo "testing"
     }
+    stage("Deploy")
+    {
+      echo "product deployed"
+    }
 }
