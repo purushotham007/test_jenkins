@@ -11,7 +11,7 @@ node
     }
     stage("testing")
     {
-        echo "testing"
+        echo "testing again"
     }
     stage("Deploy")
     {
