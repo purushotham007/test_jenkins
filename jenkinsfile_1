@@ -12,6 +12,6 @@ node
     }
     stage ('Build')
     {
-        echo "build the application"
+        echo "build the application and deploy"
     }
 }
